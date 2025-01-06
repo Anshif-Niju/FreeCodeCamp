@@ -1,0 +1,188 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Web Design</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="head">
+                <h1 id="title">FreeCodeCamp Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </div>
+        </header>
+
+        <section>
+            <div class="section1">
+                <form action="" id="survey-form">
+                    <label for="" id="name-label">Name</label>
+                    <input type="text" required id="name" placeholder="Name" />
+
+                    <label for="" id="email-label">Email</label>
+                    <input type="email" required id="email" placeholder="Email" />
+
+                    <label for="" id="number-label">Age</label>
+                    <input type="number" id="number" min="18" max="70" required id="Age" placeholder="Age" />
+
+                    <label for="" id="number-label">Phone</label>
+                    <input type="number" id="number" required placeholder="Mobile No." />
+
+                    <label for="" id="number-label">Country</label>
+                    <select name="" id="dropdown" required>
+                        <option value="" disabled selected id="Selectopt">Country</option>
+                        <option value="" id="dropdown">Canada</option>
+                        <option value="" id="dropdown">India</option>
+                        <option value="" id="dropdown">Saudi Arabia</option>
+                        <option value="" id="dropdown">Finland</option>
+                        <option value="" id="dropdown">Italy</option>
+                    </select>
+
+                    <label for="" id="label1">Where did you get this...</label>
+                    <label for="">
+                        <input type="checkbox" value="1" name="Football" />
+                        Youtube
+                    </label>
+                    <label for="">
+                        <input type="checkbox" value="1" name="Football" />
+                        Refer
+                    </label>
+                    <label for="">
+                        <input type="checkbox" value="1" name="Football" />
+                        LinkedIn
+                    </label>
+
+                    <label for="">Hobby</label>
+                    <label for="" id="label2">
+                        <input type="radio" name="hobby" id="" value="0" />Sports
+                    </label>
+                        <label for="">
+                        <input type="radio" name="hobby" id="" value="1" />Food
+                    </label>
+                        <label for="">
+                        <input type="radio" name="hobby" id="" value="2" />Travel
+                    </label>
+
+                    <label for="">Any Comments...</label>
+                    <textarea name="" id="" placeholder="Enter Your Comment..."></textarea>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+body::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+        url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Head Started */
+.head {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#description {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+#navbar {
+    margin: 0;
+}
+
+/* Head End */
+
+/* Section Started */
+
+.section1 {
+    margin: auto;
+    border-radius: 10px;
+    width: 70vw;
+    height: 143vh;
+    background-color: rgba(27, 27, 50, 0.8);
+    opacity: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 5vh;
+}
+.section1 form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.section1 form * {
+    padding: 10px 0;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#label1 {
+    margin-top: 5px;
+}
+#label2 input {
+    margin: 10px;
+}
+
+.section1 form textarea {
+    height: 150px;
+}
+.section1 form button {
+    background-color: rgb(0, 63, 0);
+    border: 1px solid white;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.section1 form button:hover {
+    background-color: white;
+    color: rgb(0, 63, 0);
+}
+/* Section End */
+
+
+@media (max-width: 2000px) {
+    .section1{
+        height: 185vh;
+    }
+}
+
+
+** end of undefined **
+

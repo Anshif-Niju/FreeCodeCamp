@@ -1,0 +1,357 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="header">
+            <nav id="nav-bar">
+                <div class="header-1">
+                    <img
+                        id="header-img"
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                        alt="original trombone logo"
+                    />
+                </div>
+                <div class="header-2">
+                    <ul>
+                        <li> <a href="#Features" class="nav-link" id="Features">Features</li></a>
+                        <li><a href="#About" class="nav-link" id="About">How It Works</li></a>
+                        <li><a href="#Pricing" class="nav-link" id="Pricing">Pricing</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section id="main-section1">
+            <h1>Handcrafted,home-made masterpieces</h1>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <input type="submit" id="submit">GET STARTED</input>
+        </form>
+
+        </section>
+        <section id="main-section2" id="Features">
+            <div class="icon">
+            <i class="fa fa-3x fa-fire"></i>
+        </div>
+        <h1 class="h1">Premium Materials</h1>
+        <p class="p1">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            <div class="icon">
+                <i class="fa fa-3x fa-truck"></i>
+        </div>
+        <h1 class="h1">Fast Shipping</h1>
+        <p class="p1">We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            <div class="icon">
+                <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <h1 class="h1">Quality Assurance</h1>
+        <p class="p1">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+</section>
+<section class="main-section3" id="About">
+    <div class="videos">
+        <iframe width="580" id="video" height="300" src="https://www.youtube.com/embed/1lovIyI4NZU?si=zixG31RLJAEYi2He" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="forms">
+        <form action="" >
+            <div class="form-div" id="Pricing">
+                <h3>TENOR TROMBONE</h3>
+                <h2>$300</h2>
+                <p>Very well done.</p>
+                <p>Very Well done.</p>
+                <p>Thank you very much.</p>
+                <p>Very Well done</p>
+                <input type="submit"></input>
+            </div>
+            <div class="form-div">
+                <h3 id="h3">BASS TROMBONE</h3>
+                <h2>$600</h2>
+                <p>Very well done.</p>
+                <p>Very Well done.</p>
+                <p>Thank you very much.</p>
+                <p>Very Well done</p>
+                <input  type="submit"></input>
+
+            </div>
+            <div class="form-div">
+                <h3>VALVE TROMBONE</h3>
+                <h2>$900</h2>
+                <p>Very well done.</p>
+                <p>Very Well done.</p>
+                <p>Thank you very much.</p>
+                <p>Very Well done</p>
+                <input type="submit"></input>
+
+            </div>
+            
+            </form>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="terms">
+        <h5>Privacy</h5>
+        <h5>Terms</h5>
+        <h5>Contacts</h5>
+    </div>
+    <div class="copywright">
+        <p>Copyright 2024, Anshif Niju</p>
+    </div>
+
+</footer>
+
+
+
+
+
+    </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav-bar {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 5%;
+}
+
+#nav-bar .header-1,
+#nav-bar .header-2 {
+  width: 50%;
+}
+
+#nav-bar img {
+  width: 40%;
+  height: auto;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#nav-bar ul li {
+  list-style-type: none;
+  color: black;
+}
+
+#main-section1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 25vh;
+  flex-direction: column;
+}
+
+#main-section1 h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+ sans-serif;
+}
+
+#main-section1 input {
+  width: 134%;
+  height: 54%;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: -57px;
+}
+
+#main-section1 button {
+  width: 71%;
+  height: 66%;
+  border: none;
+  border-radius: 3px;
+  background-color: #1c5302;
+  color: white;
+  font-weight: 600;
+  margin: 10px;
+}
+
+#main-section2 {
+  width: 98vw;
+  height: 70vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
+  margin-top: 2%;
+}
+
+#main-section2 .icon {
+  padding-left: 70%;
+  color: orange;
+  display: flex;
+  justify-content: center;
+}
+
+#main-section2 .h1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+#main-section2 .h1:nth-of-type(2) {
+  grid-row: 2/3;
+}
+
+#main-section2 .h1:nth-of-type(3) {
+  grid-row: 3/4;
+}
+
+#main-section2 .p1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#main-section2 .p1:nth-of-type(2) {
+  grid-row: 2/3;
+}
+
+#main-section2 .p1:nth-of-type(3) {
+  grid-row: 3/4;
+}
+
+#main-section2 .icon:nth-last-of-type(3) {
+  grid-row: 3/4;
+}
+
+.main-section3 {
+  width: 100vw;
+  height: auto;
+}
+
+.main-section3 .videos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section3 #form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  margin-top: 2%;
+}
+
+.main-section3 #form .form-div {
+  border: 1px solid black;
+  width: 25%;
+  height: auto;
+  border-radius: 3px;
+  padding-bottom: 25px;
+  text-align: center;
+  line-height: 2;
+  background-color: #f7f1f1;
+}
+
+.main-section3 #form .form-div h3 {
+  background-color: lightgrey;
+  color: black;
+  padding-bottom: 15px;
+}
+
+.main-section3 #form .form-div h2 {
+  margin: 10px;
+}
+
+.main-section3 #form .form-div input {
+  width: 30%;
+  height: 35px;
+  margin-top: 20px;
+  background-color: #04450e;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+}
+
+footer {
+  width: 100vw;
+  background-color: grey;
+  color: white;
+  height: auto;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+footer .terms {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+footer .terms h5 {
+  margin-left: 10px;
+}
+
+footer .copywright {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+    line-height: 1;
+  }
+  
+  .header-1 img {
+    width: 50%;
+    height: 53px;
+  }
+}
+
+.header-2 {
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+.form-div #h3 {
+  padding-left: 12px;
+}
+
+
+** end of undefined **
+
